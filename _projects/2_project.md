@@ -1,26 +1,32 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Physics Simulator
+description: Simulating physics of a Trebchet and Jack in the Box
+img: assets/img/trebuchet.png
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
+The objective of this project was to create a physics simulator from scratch. Using 
+<ol>
+<li>Project Topic and description</li>
+    <ul>
+    <li>
+    The project I did was the default ‘Jack in the Box simulation’. 
+    </li>
+    </ul>
+<li>System Drawing and modeling</li>
+    <ul>
+    <li>The system includes two moving parts which are the jack and the box. They are both modeled as squares. </li>
+    <li>The frames I have are the four corners and the center of the box and jack. Mentioned in the picture below </li>
+    <li>The frame transformations snipped from the code is as below: </li>
+            <ul>
+            <li>
+		    Xb,yb and theta_b are the planar orientation variable for the box and xj,yj, thetaj are the variable for the jack
+            </li>
+            </ul>   
+    </ul>
+</ol>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

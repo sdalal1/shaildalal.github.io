@@ -12363,10 +12363,10 @@
       meta('citation_publisher', journal.publisher);
       meta('citation_fulltext_world_readable', '', true);
 
-      if (data.publishedDate){
-        meta('citation_online_date', `${data.publishedYear}/${data.publishedMonthPadded}/${data.publishedDayPadded}`);
-        meta('citation_publication_date', `${data.publishedYear}/${data.publishedMonthPadded}/${data.publishedDayPadded}`);
-      }
+    //   if (data.publishedDate){
+    //     meta('citation_online_date', `${data.publishedYear}/${data.publishedMonthPadded}/${data.publishedDayPadded}`);
+    //     meta('citation_publication_date', `${data.publishedYear}/${data.publishedMonthPadded}/${data.publishedDayPadded}`);
+    //   }
 
       (data.authors || []).forEach((a) => {
         meta('citation_author', `${a.lastName}, ${a.firstName}`);
@@ -12412,9 +12412,9 @@
       });
     }
 
-    if ('year' in ref) {
-      content += `citation_publication_date=${ref.year};`;
-    }
+    // if ('year' in ref) {
+    //   content += `citation_publication_date=${ref.year};`;
+    // }
 
     // Special test for arxiv
     let arxiv_id_search = /https?:\/\/arxiv\.org\/pdf\/([0-9]*\.[0-9]*)\.pdf/.exec(ref.url);
