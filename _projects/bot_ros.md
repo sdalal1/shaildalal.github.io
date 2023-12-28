@@ -5,7 +5,6 @@ description: Pointilism painting robot
 img: assets/img/franka_botros.png
 importance: 1
 category: work
-# related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 ## Project: Pointillism Painting with Emika Franka Panda Arm
