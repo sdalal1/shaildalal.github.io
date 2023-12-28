@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, I am Shail Dalal, 
 
-I am a Masters of Robotics student at Northwwester University. 
+I am a Masters of Robotics student at Northwestern University. 
 
 I received my Bachelors in Mechanical Engineering degree from the University of Maryland. My studies and 
 
