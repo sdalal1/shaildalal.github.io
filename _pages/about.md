@@ -17,18 +17,12 @@ social: true  # includes social icons at the bottom of the page
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.html path="assets/img/doggo_me.png" title="S image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 Hi, I am Shail Dalal, 
 
-I am a Masters of Robotics student at Northwestern University. 
+I am a Masters of Robotics student at Northwestern University. I hold a Bachelor's in Mechanical Engineering from the University of Maryland, where my focus on human-robot interactions and sensor fusion began. During my studies, I designed a specialized thermo-cycler for a USB-size PCR testing apparatus. Professionally, I've worked as both a design engineer in security systems and an automation software engineer at Texas Instruments, gaining valuable experience in enhancing existing systems. My passion lies in robotics, aiming to innovate and automate established technologies, pushing the boundaries of automation and robotics.
 
-I received my Bachelors in Mechanical Engineering degree from the University of Maryland. My studies and 
-
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Ohh and I love dogs!!

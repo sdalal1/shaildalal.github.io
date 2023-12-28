@@ -2,7 +2,7 @@
 layout: page
 title: Temperature Cycler
 description: An IOT temperature cycler for Glass Testing
-img: assets/img/12.jpg
+img: assets/img/therm_cycler.png
 importance: 4
 category: work
 ---
