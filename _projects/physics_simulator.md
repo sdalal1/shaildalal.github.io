@@ -84,3 +84,6 @@ The simulation effectively illustrates the functioning of a trebuchet. It demons
         {% include video.html path="assets/video/treb.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
+
+
+The code can be found at this [github](https://github.com/sdalal1/Physics-Simulator) link 

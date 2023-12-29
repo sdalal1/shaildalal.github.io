@@ -68,3 +68,5 @@ The software, developed in MATLAB, effectively controlled and simulated the mobi
 **Conclusion:**
 
 The successful completion of this project signifies a significant leap in mobile manipulator control. By combining meticulous software development, realistic simulation, and insightful control strategies, I achieved the final goal. The lessons learned pave the way for advanced applications in robotics, underlining the project's success in enhancing mobile manipulator capabilities.
+
+The code can be found at this [github](https://github.com/sdalal1/Mobile-Manipulator) link 
