@@ -61,4 +61,4 @@ The project was to engineer a sophisticated dot-painting system. The primary obj
 Future enhancements include implementing dynamic paint brush checks, optimizing the number of painting points without compromising image quality, expanding the robot's workspace, and incorporating dynamic canvas positioning. These enhancements will amplify the system's creativity and flexibility, enabling it to produce even more intricate and stunning pointillism artwork.
 
 
-The code can be found at this [github](https://github.com/ME495-EmbeddedSystems/final-project-Group5) link 
+The code can be found at this [github](https://github.com/sdalal1/franka_bot_ros) link 
