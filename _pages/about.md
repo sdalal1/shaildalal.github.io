@@ -5,20 +5,24 @@ permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: center
+  image: 
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: 
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/doggo_me.png" title="S image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+<div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/prof_pic.jpg" width=350 class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/doggo_me.png" width=650 class="img-fluid rounded z-depth-1" %}
+    </div>
+    
 </div>
 
 Hi, I am Shail Dalal, 

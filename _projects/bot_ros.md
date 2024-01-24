@@ -2,7 +2,7 @@
 layout: page
 title: Bot-ROS
 description: Pointilism painting robot
-img: assets/img/franka_botros.png
+img: assets/img/bot_ros_test.png
 importance: 1
 category: work
 ---
@@ -11,7 +11,7 @@ category: work
 
 **Description:**
 
-The project was to engineer a sophisticated dot-painting system. The primary objective was to leverage the Emika Franka Panda 7 DOF robotic arm to create captivating pointillism artwork. To achieve this, we integrated cutting-edge technologies encompassing computer vision, color detection, and precision trajectory planning. Notably, the team developed intricate algorithms specifically tailored to transform images into a series of precise points suitable for the pointillism-based painting technique.
+The project was created as a team to engineer a sophisticated dot-painting system. The primary objective was to leverage the Emika Franka Panda 7 DOF robotic arm to create captivating pointillism artwork. To achieve this, we integrated cutting-edge technologies encompassing computer vision, color detection, and precision trajectory planning. Notably, the team developed intricate algorithms specifically tailored to transform images into a series of precise points suitable for the pointillism-based painting technique.
 
 **Image Transformation:**
    - Engaged in the intricate process of transforming high-resolution images into a series of meticulously placed dots. This involved meticulous planning and execution to ensure the accuracy and fidelity of the pointillism rendition.
@@ -59,6 +59,9 @@ The project was to engineer a sophisticated dot-painting system. The primary obj
 **Future Enhancements:**
 
 Future enhancements include implementing dynamic paint brush checks, optimizing the number of painting points without compromising image quality, expanding the robot's workspace, and incorporating dynamic canvas positioning. These enhancements will amplify the system's creativity and flexibility, enabling it to produce even more intricate and stunning pointillism artwork.
+
+**Team Members**
+The amazing team - Nader Ahmed, Demiana Barsoum, Fiona Neylon, Courtney Smith
 
 
 The code can be found at this [github](https://github.com/sdalal1/franka_bot_ros) link 
