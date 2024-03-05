@@ -1,13 +1,13 @@
 ---
 layout: page
-title: EKF SLAM from Scratch
-description: Implementing SLAM on Turtlebot3
+title: EKF SLAM
+description: Implementing SLAM on Turtlebot3-burger
 img: assets/img/turtlebot.png
 importance: 3
 category: work
 ---
 
-## IoT Glass Testing Device
+## Project: EKF SLAM from scratch using C++ and ROS
 
 **Description:**
 - The goal is to implement a feature based Extended Kalman Filter SLAM on a turtlebot3 in simulation as well as on a real robot.

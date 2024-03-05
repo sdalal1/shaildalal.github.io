@@ -7,7 +7,7 @@ importance: 7
 category: work
 ---
 
-## IoT Glass Testing Device
+## Project: IoT Glass Testing Device
 
 **Description:**
 - Developed an IoT-based glass testing system using a Raspberry Pi and Python. Implemented a PID control loop for optimized testing cycles, calibrated sensors for accurate temperature control, and integrated basic IoT functionalities using HTML and CSS for remote monitoring.
