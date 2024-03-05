@@ -3,7 +3,7 @@ layout: page
 title: Physics Simulator from Scratch
 description: Simulating physics of a Trebchet and Jack in the Box
 img: assets/img/trebuchet.png
-importance: 2
+importance: 4
 category: work
 giscus_comments: false
 ---

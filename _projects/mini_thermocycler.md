@@ -3,7 +3,7 @@ layout: page
 title: Miniature Thermocycler
 description: Thermocycler for a miniature PCR testing device
 img: assets/img/mini_therm.jpg
-importance: 5
+importance: 8
 category: work
 ---
 

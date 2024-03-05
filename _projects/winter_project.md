@@ -3,7 +3,7 @@ layout: page
 title: Reinforcement Learning for Quadruped
 description: Weaving poles using a Unitree Go1
 img: assets/img/unitree1.png
-importance: 1
+importance: 2
 category: work
 ---
 

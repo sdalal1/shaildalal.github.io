@@ -3,7 +3,7 @@ layout: page
 title: EKF SLAM from Scratch
 description: Implementing SLAM on Turtlebot3
 img: assets/img/turtlebot.png
-importance: 4
+importance: 3
 category: work
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Kuka Youbot Simulation
 description: Coppeliasim using MATLAB and feedforward + PI control
 img: assets/img/mobile_manipulation.png
-importance: 3
+importance: 5
 category: work
 ---
 

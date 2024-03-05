@@ -3,7 +3,7 @@ layout: page
 title: Security system IOT
 description: Security camera system
 img: assets/img/under_construction.jpg
-importance: 7
+importance: 100
 category: work
 ---
 
