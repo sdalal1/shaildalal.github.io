@@ -114,6 +114,12 @@ The simulation is divided into two big portions, observations and the depth spac
 To use the camera raw image, it is first converted to the same quality as seen in simulation. This image is a very compressed version of the raw image. This image also doesnt have multiple color channels. 
 To the modified image, another compression is applied which changes the picture into just a latent representation of the space. This representation goes through another model to convert it to a 1x32 size depth latent representation of the raw image. 
 
+<div class="row" >
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/latent.png" title="Raw terrain" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 This latent representation is then used as an input for the trained model with the observation space which gives actions as joint states.
 
 A ROS2 package was created to use the camera input and use the compression models on those. Below is a video of depth policy working on the quadruped while being teleoperated.
@@ -124,6 +130,7 @@ A ROS2 package was created to use the camera input and use the compression model
     </div>
 </div>
 
+
 **SIM TO REAL PIPELINE TEST**
 
 A sim to real pipeline test of [quadruped_locomotion_project
@@ -133,9 +140,6 @@ A sim to real pipeline test of [quadruped_locomotion_project
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="assets/video/pipeline_test.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
-    </div>
-    <div class="caption">
-    Pipeline testing for sim to real
     </div>
 </div>
 </div>
