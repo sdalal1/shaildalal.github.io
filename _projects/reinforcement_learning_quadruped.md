@@ -147,4 +147,4 @@ A sim to real pipeline test of [quadruped_locomotion_project
 This project is highly inspired from the [Extreme-Parkour](https://github.com/chengxuxin/extreme-parkour) package created by CMU and is built on top of [RSL-RL](https://github.com/leggedrobotics/rsl_rl) Nvidia Package.
 
 
-The code can be found at this [github](https://github.com/sdalal1/) link 
+The code can be found at this [github](https://github.com/sdalal1/extreme-parkour-barkour) link 
