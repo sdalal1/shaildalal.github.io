@@ -28,17 +28,17 @@ The project was created as a team to engineer a sophisticated dot-painting syste
 **Computer Vision Techniques:**
    - Implemented advanced computer vision techniques, including color tracking, and thresholding, to identify the location of brushes and various paint colors on the palette. This enabled the robot arm to precisely interact with the palette and paintbrushes.
    - I was responsible for the color and palette detection algorithm. This algorithm uses an Intel realsense to get the loaction of the palette april tag and create a mask around it. A color detection algorithm was used in this mask to find location of centroid of 6 different colors.
-   - The ROS package called color captured the image from the realsense, then change the color pattern from BGR to HSV. For different colors, the lower and upper hue, satuaration and value were found using a trackbar and then fed into the code for permanent color detection. The algorith finds all the conotours in that value range and then finds the centroid of the largest one. 
-   - A very imporatant part of this algorithm was to convert cartesian coordinates to the pixel value. To do that the camera instrinsic values were needed which are published on the camera_info topic. The position of the apriltag is in cartesian coordinates which are converted to pixels which is used to create a mask. The centroid of each color is then found in the pixel coordinate and then converted to the cartesian coordinates. These points were then published on the TF tree with respect to the camera frame. 
+   - The ROS package called color captured the image from the realsense, then change the color pattern from BGR to HSV. For different colors, the lower and upper hue, saturation and value were found using a track-bar and then fed into the code for permanent color detection. The algorithm finds all the contours in that value range and then finds the centroid of the largest one. 
+   - A very important part of this algorithm was to convert cartesian coordinates to the pixel value. To do that the camera intrinsic values were needed which are published on the camera_info topic. The position of the apriltag is in cartesian coordinates which are converted to pixels which is used to create a mask. The centroid of each color is then found in the pixel coordinate and then converted to the cartesian coordinates. These points were then published on the TF tree with respect to the camera frame. 
 
 **ROS MoveIt API Implementation:**
    - Skillfully utilized a custom MoveIt API tailored explicitly for the Franka Panda arm. This facilitated precise trajectory planning and execution, ensuring the robot arm moved accurately to create the desired pointillism patterns.
    - The API created has multiple commands which can be called in another scripts. These constraint different aspects of the robot. 
 <ul>
 <ul>
-<li>The plan path to posiiton command moves the end-effector to a position passed.</li>
-<li>The plan path to orientation moves the end-effector to the specified orientation in terms of quaternians.</li>
-<li>The plan path to position orienation moves the franka to the designated position with the orientation passed as the orientation of the end-effector.</li>
+<li>The plan path to position command moves the end-effector to a position passed.</li>
+<li>The plan path to orientation moves the end-effector to the specified orientation in terms of quaternions.</li>
+<li>The plan path to position orientation moves the Franka to the designated position with the orientation passed as the orientation of the end-effector.</li>
 <li>The plan path to cartesian plans a path to waypoints with the orientation constraint through the path.</li>
 </ul>
 </ul>
@@ -46,7 +46,7 @@ The project was created as a team to engineer a sophisticated dot-painting syste
 **Successful System Delivery:**
    - Delivered a fully functional and efficient system capable of translating digital images into captivating pointillism artwork. The successful execution demonstrated the effectiveness and reliability of our system's capabilities. The video is as follows:
 
-<div class="row">
+<div class="row ">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="assets/video/S_speedup.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>

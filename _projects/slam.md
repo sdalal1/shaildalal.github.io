@@ -10,10 +10,10 @@ category: work
 ## Project: EKF SLAM from scratch using C++ and ROS
 
 **Description:**
-- The goal is to implement a feature based Extended Kalman Filter SLAM on a turtlebot3 in simulation as well as on a real robot.
+- The goal is to implement a feature based Extended Kalman Filter SLAM using ROS2 and C++ on a turtlebot3 burger from scratch in simulation as well as on a real robot. The complete pipeline includes the starting point of making a Kinematics library for movement and control, creating a simulation using the created library and 
 
 **Circle:**
-The video of controlling theturtlebot to move in a circle:
+The video of controlling the turtlebot to move in a circle:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -31,4 +31,4 @@ The SLAM implementation in Simulation
     </div>
 </div>
 
-The code can be found at this [github](https://github.com/sdalal1/) link 
+The code can be found at this [github](https://github.com/sdalal1/) link
