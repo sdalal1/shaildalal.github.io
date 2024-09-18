@@ -86,7 +86,7 @@ Both these iterations were used for the swarm system created.
   
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/All motions.mp4" width="50%" class="img-fluid rounded z-depth-1" controls=true autoplay=true style="height: 100%;" %}
+            {% include video.html path="assets/video/All motions.mp4" width="50%" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true style="height: 100%;" %}
     </div>
 </div>
 
@@ -110,7 +110,7 @@ Both these iterations were used for the swarm system created.
 <div class="row" >
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/obs_avoidance_with_steady_obs.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/obs_avoidance_with_steady_obs.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Static Wheelchair
@@ -118,7 +118,7 @@ Both these iterations were used for the swarm system created.
 </div>
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/obs_avoidance_with_moving_wc.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/obs_avoidance_with_moving_wc.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Moving Wheelchair
@@ -133,7 +133,7 @@ Both these iterations were used for the swarm system created.
 <div class="row" >
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/kyle_good.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/kyle_good.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Good Avoidance
@@ -141,7 +141,7 @@ Both these iterations were used for the swarm system created.
 </div>
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/kyle_blooper.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/kyle_blooper.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Blooper Avoidance
@@ -154,7 +154,7 @@ Both these iterations were used for the swarm system created.
 <div class="row center-content">
     <div class="col">
         <div class="col">
-            {% include video.html path="assets/video/larrisa_good_test.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/larrisa_good_test.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
         </div>
         <div class="caption text-center">
             Obstacle avoidance with Wheelchair
@@ -168,7 +168,7 @@ Both these iterations were used for the swarm system created.
 <div class="row" >
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/controlled_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/controlled_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Test1
@@ -176,7 +176,7 @@ Both these iterations were used for the swarm system created.
 </div>
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/controlled_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/controlled_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Test2
@@ -187,7 +187,7 @@ Both these iterations were used for the swarm system created.
 <div class="row" >
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/demiana_full_test_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/demiana_full_test_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Test3
@@ -195,7 +195,7 @@ Both these iterations were used for the swarm system created.
 </div>
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-            {% include video.html path="assets/video/demiana_full_test_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+            {% include video.html path="assets/video/demiana_full_test_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false muted=true %}
     </div>
     <div class="caption">
         Test4
