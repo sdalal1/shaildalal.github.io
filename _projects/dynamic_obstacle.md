@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Dynamic Obstacles for Powered Wheelchair
-description: single and multi actor systems
+description: Single actor system
 img: assets/img/IMG_9256.PNG
 importance: 1
 category: work
 ---
 
-## Project: 
+## Project:
 
 ##### **Description:**
 
@@ -202,3 +202,10 @@ Both these iterations were used for the swarm system created.
     </div>
 </div>
 </div>
+
+##### **Acknowledgements**
+
+- Larisa Loke
+- Joel Goh
+- Kyle Puckett, Demiana Barsoum - For help with testings
+- Dr. Brenna Argall

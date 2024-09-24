@@ -3,7 +3,7 @@ layout: page
 title: Bot-ROS
 description: Pointilism painting robot
 img: assets/img/bot_ros_test.png
-importance: 1
+importance: 3
 category: work
 ---
 
