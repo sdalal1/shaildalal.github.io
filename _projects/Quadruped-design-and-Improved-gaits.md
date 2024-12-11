@@ -492,6 +492,6 @@ The project introduced several unique features that improved speed and efficienc
 #### **Aknowledgements**  
 I want to thank a couple of people for this project:
   - Matthew Elwin - For constant support and guidance throughout this project.
-  - Davin landry - Helping me with mechanical Design iterations and keeping me sane
+  - Davin landry - Helping me with mechanical Design iterations.
 
 
