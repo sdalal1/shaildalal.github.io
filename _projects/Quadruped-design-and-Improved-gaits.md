@@ -114,11 +114,12 @@ Quick Summary of the changes sections:
         {% include figure.html path="assets/img/3D_design.png" title="3D Design" class="img-fluid rounded z-depth-1" class="center-img" %}
     </div>
 </div>
----
 
 After the successful training of unconstrained gaits, I focused on designing a real-world quadruped based on the specifications derived from the simulation. The details of this physical design process, including hardware considerations, are discussed in the Quadruped Design section.
 
 This iterative approach bridged the gap between simulation and real-world application, providing a robust foundation for efficient quadruped locomotion.
+
+---
 
 #### **Reinforcement Learning for Gaits** 
 
@@ -264,7 +265,10 @@ The best-performing models were identified by analyzing the value loss curve dur
 In contrast, models with value loss curves that plateaued early or fluctuated excessively resulted in suboptimal gaits, marked by instability or inefficient motor control. Successful models displayed a clear downward trend in value loss, aligning with balanced, energy-efficient locomotion. Focusing on these timesteps ensured the selection of optimal gaits and refined overall performance.
 
 
-- **Visualization Tools:**  <br>he effectiveness of training strategies and ensure alignment with performance goals.
+- **Visualization Tools:**
+   - TensorBoard provided real-time insights into reward trends, policy gradients, and loss metrics during training.  
+   - Custom plots for energy consumption, motor power, and velocity trends offered a comprehensive view of the quadruped's capabilities, aiding in further refinement.  
+   - Trends in the value loss curve were used to validate the effectiveness of training strategies and ensure alignment with performance goals.
 
 This structured evaluation approach facilitated the selection of optimal models while providing actionable insights to guide future iterations and enhance the quadruped's real-world performance.
 
@@ -288,7 +292,7 @@ This structured evaluation approach facilitated the selection of optimal models 
 </div>
 </div>
 
-The left cluster of graphs is for a single link torso and the right is for a multi link torso. We can easily compare that the max speed achieved by a segmented back is 1.47 while the single link is about 0.8. This proves that the segmented back is overall faster than a single link quadruped.
+The left cluster of graphs is for a single link torso and the right is for a multi link torso. We can easily compare that the max speed achieved by a segmented back is 1.47 while the single link is about 0.8. This was indicative of the design changes were in the right direction.
 
 ---
 
@@ -508,6 +512,7 @@ The project introduced several unique features that improved speed and efficienc
 ---
 
 #### **Aknowledgements**  
+
   - [Matthew Elwin](https://robotics.northwestern.edu/people/profiles/faculty/elwin-matt.html) - For constant support and guidance throughout this project.
   - [Davin Landry](https://dlandry97.github.io/Davin_Landry/) - Helping me with mechanical Design iterations.
 
