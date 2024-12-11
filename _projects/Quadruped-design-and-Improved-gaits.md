@@ -17,6 +17,8 @@ This project focused on designing a high-speed quadruped inspired by the biomech
   2. **Development of walking gaits using RL** in simulated environments.
   3. **Construction of a modular quadruped** for real-world deployment and evaluation.
 
+Here is the **[link](https://github.com/sdalal1/Fast-Quadruped-)** to the github repository
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -43,7 +45,7 @@ Quick Summary of the changes sections:
   - Introduced a flexible, spine-like back to improve stride length and energy transfer.
   - Simulations demonstrated a significant increase in speed and smoother gaits compared to rigid designs.
 
-- A Picture Collage of all the different styles
+- **A Picture Collage of all the different styles**
 
 <div class="row mt-3">
     <div class="col-sm mt-2 mt-md-0">
@@ -86,7 +88,6 @@ Quick Summary of the changes sections:
 
 - Initial Design and Y-Direction Constrained Training:
     - Once the 4-legged model was successfully constructed, I began training the gaits with a constraint limiting movement to the Y-direction. This approach yielded excellent results, producing smooth forward motion and a natural walking gait for a single-link torso.
-
     - This stage leveraged motor values from the original MuJoCo half-cheetah model and demonstrated the feasibility of stable motion.
 
 - Scaling for Real-World Implementation:
@@ -96,7 +97,7 @@ Quick Summary of the changes sections:
 
 - Training in 2D:
     - Using the scaled-down model, I trained the quadruped in 2D. This phase was highly successful, resulting in stable walking gaits.
-  
+
 - Unconstrained Gait Training:
     - Building on the success of 2D training, I removed the Y-direction constraint to enable movement in all directions.
     - This transition opened up new opportunities for refining the model, focusing on achieving balance and developing more versatile and efficient gaits, which will be elaborated on in the reinforcement learning section.
@@ -217,6 +218,14 @@ The quadruped's locomotion capabilities were developed through a systematic rein
 - **Training Infrastructure**:
   - The training was conducted on a headless server to maximize computational efficiency. A virtual environment was created to ensure seamless integration of the training pipeline, which included MuJoCo and Stable Baselines3. All dependencies and configurations are documented in the GitHub repository linked to this project.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include youtube.html  id="LL_hra5FPwY" %}
+    </div>
+</div>
+
+---
+
 ##### **Evaluation** 
 Post-training, the model's performance was rigorously evaluated using logged data and visualized insights.
 
@@ -255,10 +264,7 @@ The best-performing models were identified by analyzing the value loss curve dur
 In contrast, models with value loss curves that plateaued early or fluctuated excessively resulted in suboptimal gaits, marked by instability or inefficient motor control. Successful models displayed a clear downward trend in value loss, aligning with balanced, energy-efficient locomotion. Focusing on these timesteps ensured the selection of optimal gaits and refined overall performance.
 
 
-- **Visualization Tools:**  
-   - TensorBoard provided real-time insights into reward trends, policy gradients, and loss metrics during training.  
-   - Custom plots for energy consumption, motor power, and velocity trends offered a comprehensive view of the quadruped's capabilities, aiding in further refinement.  
-   - Trends in the value loss curve were used to validate the effectiveness of training strategies and ensure alignment with performance goals.
+- **Visualization Tools:**  <br>he effectiveness of training strategies and ensure alignment with performance goals.
 
 This structured evaluation approach facilitated the selection of optimal models while providing actionable insights to guide future iterations and enhance the quadruped's real-world performance.
 
@@ -288,13 +294,16 @@ The left cluster of graphs is for a single link torso and the right is for a mul
 
 #### **Designing and Building the Quadruped** 
 
-The modular quadruped design translated the simulation results into physical hardware:
+The quadruped design bridged simulation and hardware, featuring modularity, precision actuation, robust electronics, and real-time sensing.
 
 - **Mechanical Structure**: 
-  - The robot's frame was constructed using 20-20 aluminum extrusions, chosen for their lightweight yet durable properties. A belt-pulley system was integrated to ensure smooth and efficient leg movement. The modular nature of the aluminum frame allows for easy adjustments and upgrades, enabling the design to evolve based on user needs.
-  - The belt-pulley system was inspired by old versions of MIT cheetah. This design is easy to set up, especially with 20-20 extrusions as they can be easily used to tension the belts. 
-  - The motors rotors don't have an axle but a certain pattern which needed to be utilized. To create the entire assembly custom parts had to be designed and made out of aluminum due to high torque to avoid breaking points. 
-  - There were constant design iterations which are as below:
+  - **Frame Design:**
+    - Built using 20-20 aluminum extrusions for a lightweight yet durable frame. The modular design allows for easy adjustments and upgrades to suit user needs.
+    - Integrated belt-pulley systems inspired by earlier MIT Cheetah versions provided smooth, efficient leg motion. The 20-20 extrusions facilitated easy belt tensioning.
+  - **Custom Parts:**
+    - Custom aluminum components were designed and manufactured to accommodate high-torque motor assemblies, ensuring durability under load and preventing structural failures.
+  - **Iterative Prototyping**
+    - Continuous design iterations refined the mechanical structure, as illustrated below:
 
 <div class="row mt-3">
     <div class="col-sm mt-2 mt-md-0">
@@ -309,22 +318,25 @@ The modular quadruped design translated the simulation results into physical har
     </div>
 </div>
 
-- **Actuation and Control**:  
-  - To meet the torque demands identified in the MuJoCo simulations, where the peak requirement for the larger quadruped model reached 21Nm, high-speed brushless DC motors with a peak torque output of 22Nm were selected. These motors were chosen not only for their torque capacity but also for their high rotational speed and light weight, enabling efficient and dynamic locomotion. Integrated with ODrive controllers, these motors offer seamless integration and precise control, facilitating rapid prototyping and fine-tuned adjustments for optimal performance.
-  - After doing some research, the motors selected were Steadywin GIM8108-8 Gear Motor.
-  - Some important motor details are as follows:
+- **Actuation and Control**:
+  - **Motor Selection**
+    - Torque demands from MuJoCo simulations identified a peak of 21Nm for the larger quadruped.
+    - High-speed brushless DC motors (Steadywin GIM8108-8) with a peak torque output of 22Nm were selected to meet these requirements, balancing high rotational speed with lightweight construction.
+    - ODrive controllers were integrated for precise control and seamless hardware interfacing, enabling rapid prototyping and tuning.
 
-  ```bash
-      - Gear Ratio - 8:1
-      - Diameter - 97mm
-      - Stall Torque - 22Nm
-      - Nominal Torque - 7.5Nm
-      - No Load Speed - 320rpm
-      - Nominal Current Rating - 7A
-      - Peak Current Rating - 25A
-      - Voltage Rating - 48V
-      - Mass - 375g
-  ```
+  - **Motor Specifications**
+
+    ```bash
+        - Gear Ratio - 8:1
+        - Diameter - 97mm
+        - Stall Torque - 22Nm
+        - Nominal Torque - 7.5Nm
+        - No Load Speed - 320rpm
+        - Nominal Current Rating - 7A
+        - Peak Current Rating - 25A
+        - Voltage Rating - 48V
+        - Mass - 375g
+    ```
 
   - The motor information is attached here.
     - [Motor information](/assets/img/33.jpg)
@@ -350,16 +362,22 @@ The modular quadruped design translated the simulation results into physical har
 </div>
 
 - **Feet Design**
-  - The feet is 3D design found on thingyverse under squash ball feet which were used as feet for 3D printers [link](https://www.thingiverse.com/thing:5404058). The idea originated from original MIT cheetah design which use squash balls as well. 
+  - **3D-Printed Feet:**
+    - The feet were based on a design from [Thingiverse](https://www.thingiverse.com/thing:5404058), originally used for 3D printers.
+    - Inspired by the MIT Cheetah, squash balls were utilized for cushioning and durability.
 
 - **Electronics**
-  - The motors were powered from a 48V-25A power supply. One of these power supply were used to power 4 motors at a time.
-  - The [link](https://www.amazon.com/BOSYTRO-Switching-Transformer-Security-Industrial/dp/B0CWTY3G1C?crid=3N6PAJJWM48IX&dib=eyJ2IjoiMSJ9.JwQ5wUAfersA751DQzAN8UCs2y9rV1ASN-KIYq6DzLH-4czIkQQKia4z7YiqPql-94A3OA2g8fjTq4gG3p0A7OuF49hgJqFwrE7v9orUOxMg-4u1sumUQ4fvg4MlbVBJhRwCyIi-bVl3Mfxz9fpqdSuNcBJf3jOWsmpTKtZ-TFtr7JmfrPEbBKZQl1wDG3hB1omnKIK1c5TcahXdz4IRqFskz31rKPqtQOFtr0UmZR0oJOXRSaWr2n2KoHiJj8HLt2ohO3KcfxHkPrpuQMrH65hnHUMLBx8KiuuaABQzB6o.hTOJSAWli0_erfQR_bbYcKEogYxvRgp6WB60dcbRChw&dib_tag=se&keywords=48v%2Bpower%2Bsupply%2B30a&qid=1731359779&s=electronics&sprefix=48v%2Bpower%2Bsupply%2B30a%2Celectronics%2C114&sr=1-1&th=1) to the power supply
-  - For communication with the motors, CAN-bus was setup with a raspberry pi4B using a RS485 Can-hat.
+  - **Power Supply**
+    - Each motor was powered by a 48V-25A power supply, with one supply handling four motors simultaneously.
+    - This power supply was selected for its ability to deliver a peak current of 25A, which comfortably exceeds the combined current required by 4 motors for position control.
+    - [Link](https://www.amazon.com/BOSYTRO-Switching-Transformer-Security-Industrial/dp/B0CWTY3G1C?crid=3N6PAJJWM48IX&dib=eyJ2IjoiMSJ9.JwQ5wUAfersA751DQzAN8UCs2y9rV1ASN-KIYq6DzLH-4czIkQQKia4z7YiqPql-94A3OA2g8fjTq4gG3p0A7OuF49hgJqFwrE7v9orUOxMg-4u1sumUQ4fvg4MlbVBJhRwCyIi-bVl3Mfxz9fpqdSuNcBJf3jOWsmpTKtZ-TFtr7JmfrPEbBKZQl1wDG3hB1omnKIK1c5TcahXdz4IRqFskz31rKPqtQOFtr0UmZR0oJOXRSaWr2n2KoHiJj8HLt2ohO3KcfxHkPrpuQMrH65hnHUMLBx8KiuuaABQzB6o.hTOJSAWli0_erfQR_bbYcKEogYxvRgp6WB60dcbRChw&dib_tag=se&keywords=48v%2Bpower%2Bsupply%2B30a&qid=1731359779&s=electronics&sprefix=48v%2Bpower%2Bsupply%2B30a%2Celectronics%2C114&sr=1-1&th=1) to the power supply.
+  - **Communication**
+    - A Raspberry Pi 4B, equipped with an RS485 CAN-HAT, facilitated CAN-bus communication with the ODrive controllers for efficient motor control.
 
 - **Sensors**:
-  - IMUs and encoders were integrated to provide real-time feedback, replicating the trained RL model's behavior on physical hardware. These sensors ensured accurate motion tracking and contributed to the quadruped's stability and performance during real-world tests.
-
+  - **IMUs and Encoders:**
+    - Integrated sensors provided real-time feedback for accurate motion tracking.
+    - These sensors ensured stability and precise replication of the trained RL model’s behavior in physical tests.
 
 ##### <ins>**Full Quadruped Pictures**</ins>
 
@@ -404,8 +422,8 @@ The video on the right shows position control test for motors in home position. 
 #### **Sim-to-Real Pipeline**
 
 The transition from simulation to reality was facilitated through a well-defined sim-to-real pipeline:  
-1. **Direct Deployment**: 
-   - The Rl trained model can be deployed on the real robot directly as the mujoco model is modelled directly around the real quadruped.
+- **Direct Deployment**: 
+   - The RL trained model can be deployed on the real robot directly as the mujoco model is modelled directly around the real quadruped.
    - The action space of the model is torques, so the RL model can be deployed using torque control.
    - Another way it can be deployed is using position control and deploying positions for motors which can be extracted directly from mujoco's physics simulations. 
    - Here is a layout of how this deployment would work:
@@ -422,7 +440,7 @@ The transition from simulation to reality was facilitated through a well-defined
     </div>
 </div>
 
-1. **Future Works**: 
+- **Future Works**: 
    - Plans include integrating OptiTrack or camera-based systems to improve positional accuracy during real-world tests.
    - Implementing the segmented back setup on a real quadruped.
    - Completing the sim to real pipeline for the built quadruped.
@@ -490,8 +508,7 @@ The project introduced several unique features that improved speed and efficienc
 ---
 
 #### **Aknowledgements**  
-I want to thank a couple of people for this project:
-  - Matthew Elwin - For constant support and guidance throughout this project.
-  - Davin landry - Helping me with mechanical Design iterations.
+  - [Matthew Elwin](https://robotics.northwestern.edu/people/profiles/faculty/elwin-matt.html) - For constant support and guidance throughout this project.
+  - [Davin Landry](https://dlandry97.github.io/Davin_Landry/) - Helping me with mechanical Design iterations.
 
 
