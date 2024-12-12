@@ -11,13 +11,13 @@ category: work
 <br>
 
 #### **Overview**
-This project focused on designing a high-speed quadruped inspired by the biomechanics of agile animals like greyhounds. The primary goal was to develop a modular quadruped capable of efficient locomotion by integrating mechanical innovation with reinforcement learning (RL). The project consisted of three phases:
+This project focused on designing a high-speed quadruped inspired by the biomechanics of agile animals like greyhounds. The primary goal was to develop a simulation of a quadruped capable of efficient locomotion by integrating mechanical innovation with reinforcement learning (RL). The project consisted of three phases:
 
   1. **Simulation of various robot designs** to optimize locomotion parameters.
   2. **Development of walking gaits using RL** in simulated environments.
   3. **Construction of a modular quadruped** for real-world deployment and evaluation.
 
-Here is the **[link](https://github.com/sdalal1/Fast-Quadruped-)** to the github repository
+Here is the **[link](https://github.com/sdalal1/Fast-Quadruped-)** to the github repository.
 
 
 <div class="row">
@@ -325,8 +325,8 @@ The quadruped design bridged simulation and hardware, featuring modularity, prec
 - **Actuation and Control**:
   - **Motor Selection**
     - Torque demands from MuJoCo simulations identified a peak of 21Nm for the larger quadruped.
-    - High-speed brushless DC motors (Steadywin GIM8108-8) with a peak torque output of 22Nm were selected to meet these requirements, balancing high rotational speed with lightweight construction.
-    - ODrive controllers were integrated for precise control and seamless hardware interfacing, enabling rapid prototyping and tuning.
+    - High-speed brushless DC motors [Steadywin GIM8108-8](https://www.steadywin.cn/pd.jsp?id=134#_jcp=3_3) with a peak torque output of 22Nm were selected to meet these requirements, balancing high rotational speed with lightweight construction.
+    - The motors come with integrated ODrive controllers for precise control and seamless hardware interfacing, enabling rapid prototyping and tuning.
 
   - **Motor Specifications**
 
